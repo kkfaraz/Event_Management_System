@@ -1,0 +1,235 @@
+:root{
+    --main-color: #3867d6;
+}
+
+*{
+    padding: 0;margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;border: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+body {
+    background-image: url(Pics/bg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Navbar styling */
+
+section{
+    padding: 2rem 9%;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #444;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .3rem .5rem;
+    font-size: 1.7rem;
+    border-radius: .3rem;
+    background: #666;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+.btn:hover{
+    background: var(--main-color);
+}
+html{
+    font-size: 62.5%;
+    
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+.home .content{
+    text-align: center;
+    padding-top: 5%;
+    margin-left: 2rem auto;
+    max-height: 70%;
+
+}
+
+.home .content h3{
+    color: #fff;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+}
+
+.home .content h3 span{
+    color: #007bff;
+    text-transform: uppercase;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 19%;
+    padding-right: 10%;
+    padding-left: 5%;
+
+
+}
+.navbar{
+    margin-left: 10%;
+}
+
+
+.header .logo{
+    font-weight: bolder;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.header .logo span{
+    color: var(--main-color);
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: #fff;
+    margin-right: 2rem;
+}
+
+.header .navbar a:hover{
+    color: var(--main-color);
+}
+
+/* form styling */
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+
+
+}
+
+.form-container {
+    background-color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    position:initial;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 20px;
+    max-width: 500px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color:#007bff;
+    font-size: 30px;
+
+}
+
+h3 {
+    color:#007bff;
+    font-size: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.google-sign-in {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.google-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.google-sign-in:hover {
+    text-decoration: underline;
+}
+
+#login-form {
+    height: 150px;
+    
+}
+
+#signup-form {
+    height: 160px;
+    
+}
+
+.container a {
+    font-size: 20px;
+    color: #007bff;
+
+}
+
+.container a:hover{
+    text-decoration: underline;
+    background-color: white;
+}
+
+.container button  {
+    font-size: 15px;
+}
+
+.container p {
+    font-size: 15px;
+}
+
+h3 b{
+    color: white;
+}
+a img{
+    color: white;
+}

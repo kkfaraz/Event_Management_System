@@ -1,0 +1,123 @@
+
+INSERT INTO EVENT_CATEGERY (CATEGERY_ID, CATEGERY_NAME) VALUES (1, 'Wedding');
+INSERT INTO EVENT_CATEGERY (CATEGERY_ID, CATEGERY_NAME) VALUES (2, 'Concert');
+INSERT INTO EVENT_CATEGERY (CATEGERY_ID, CATEGERY_NAME) VALUES (3, 'Birthday');
+
+
+
+Insert into EVENT_ORGANIZER (ORGANIZER_ID,ORGANIZER_NAME,EMAIL,PHONE,CATEGERY_ID) values (1,'Jhon Abrahim','Jhon@gmail.com',114567819012,1);
+Insert into EVENT_ORGANIZER (ORGANIZER_ID,ORGANIZER_NAME,EMAIL,PHONE,CATEGERY_ID) values (2,'Steven King','Steven@gmail.com',232567819012,2);
+Insert into EVENT_ORGANIZER (ORGANIZER_ID,ORGANIZER_NAME,EMAIL,PHONE,CATEGERY_ID) values (3,'Neena Kochhar','Neena@gmail.com',334567819012,3);
+Insert into EVENT_ORGANIZER (ORGANIZER_ID,ORGANIZER_NAME,EMAIL,PHONE,CATEGERY_ID) values (4,'Alexander Hunold','Alexander@gmail.com',434567819012,1);
+Insert into EVENT_ORGANIZER (ORGANIZER_ID,ORGANIZER_NAME,EMAIL,PHONE,CATEGERY_ID) values (5,'Bruce Ernst','Bruce@gmail.com',534567819012,2);
+Insert into EVENT_ORGANIZER (ORGANIZER_ID,ORGANIZER_NAME,EMAIL,PHONE,CATEGERY_ID) values (6,'David Austin','David@gmail.com',634567819012,2);
+Insert into EVENT_ORGANIZER (ORGANIZER_ID,ORGANIZER_NAME,EMAIL,PHONE,CATEGERY_ID) values (7,'Diana Lorentz','Diana@gmail.com',734567819012,3);
+
+
+
+
+INSERT INTO EVENT (EVENT_ID, EVENT_NAME, EVENT_LOCATION, EVENT_DESCRIPTION, CATEGERY_ID) VALUES (1, 'Kumar Wedding','Central Park New York USA', 'Join us in celebrating the union of two hearts as they begin their lifelong journey together. Witness a day filled with love joy and unforgettable moments', 1);
+INSERT INTO EVENT (EVENT_ID, EVENT_NAME, EVENT_LOCATION, EVENT_DESCRIPTION, CATEGERY_ID) VALUES (2, 'Jhon Birthday', ' Eiffel Tower Paris France', ' Its time to party! Come and celebrate another year of life laughter and fun. There will be cake games and a whole lot of birthday cheer', 3);
+INSERT INTO EVENT (EVENT_ID, EVENT_NAME, EVENT_LOCATION, EVENT_DESCRIPTION, CATEGERY_ID) VALUES (3, 'Gift University Concert', ' Sydney Opera House Sydney Australia', 'Get ready for a night of electrifying music and non-stop entertainment! Our lineup of talented artists will rock the stage and you won want to miss this epic concert experience.', 2);
+INSERT INTO EVENT (EVENT_ID, EVENT_NAME, EVENT_LOCATION, EVENT_DESCRIPTION, CATEGERY_ID) VALUES (4, 'Thakur Partab Wedding', ' Tokyo Disneyland Tokyo Japan', 'Join us for a magical celebration of love as two hearts become one. Our wedding will be an elegant affair filled with romance laughter and unforgettable moments.', 1);
+INSERT INTO EVENT (EVENT_ID, EVENT_NAME, EVENT_LOCATION, EVENT_DESCRIPTION, CATEGERY_ID) VALUES (5, 'Punjab University Concert', ' Grand Canyon Arizona USA', 'Get ready to rock the night away at our electrifying concert! Experience the energy of live music with top artists performing your favorite songs under the stars.', 2);
+INSERT INTO EVENT (EVENT_ID, EVENT_NAME, EVENT_LOCATION, EVENT_DESCRIPTION, CATEGERY_ID) VALUES (6, 'Yadav Birthday', ' Great Wall of China Beijing China', 'Its time to party! Join us for a spectacular birthday bash filled with cake games and lots of fun surprises. Dont miss the chance to celebrate another fantastic year!', 3);
+INSERT INTO EVENT (EVENT_ID, EVENT_NAME, EVENT_LOCATION, EVENT_DESCRIPTION, CATEGERY_ID) VALUES (7, 'Daya Wedding', 'Machu Picchu Cusco Peru', ' Join us for a magical celebration of love as two hearts become one. Our wedding will be an elegant affair filled with romance laughter and unforgettable moments.', 1);
+
+
+INSERT INTO EVENT_DATETIME (EVENT_ID, EVENT_DATETIME_TIME, EVENT_DATETIME_DATE, ORGANIZER_ID) VALUES (1, '12:00:00', '2023-09-15', 1);
+INSERT INTO EVENT_DATETIME (EVENT_ID, EVENT_DATETIME_TIME, EVENT_DATETIME_DATE, ORGANIZER_ID) VALUES (2, '14:30:00', '2023-09-16', 2);
+INSERT INTO EVENT_DATETIME (EVENT_ID, EVENT_DATETIME_TIME, EVENT_DATETIME_DATE, ORGANIZER_ID) VALUES (3, '16:45:00', '2023-09-17', 3);
+INSERT INTO EVENT_DATETIME (EVENT_ID, EVENT_DATETIME_TIME, EVENT_DATETIME_DATE, ORGANIZER_ID) VALUES (4, '12:00:00', '2023-09-15', 1);
+INSERT INTO EVENT_DATETIME (EVENT_ID, EVENT_DATETIME_TIME, EVENT_DATETIME_DATE, ORGANIZER_ID) VALUES (5, '14:30:00', '2023-09-16', 2);
+INSERT INTO EVENT_DATETIME (EVENT_ID, EVENT_DATETIME_TIME, EVENT_DATETIME_DATE, ORGANIZER_ID) VALUES (6, '16:45:00', '2023-09-17', 3);
+INSERT INTO EVENT_DATETIME (EVENT_ID, EVENT_DATETIME_TIME, EVENT_DATETIME_DATE, ORGANIZER_ID) VALUES (7, '12:00:00', '2023-09-15', 1);
+
+
+INSERT INTO REVIEW (REVIEW_ID, REVIEW_COMMENT, EVENT_RATING) VALUES (1, 'Attended a beautiful wedding last weekend! The venue was stunning, and the bride and groom looked radiant. It was a truly memorable day filled with love and joy.', 4.5);
+INSERT INTO REVIEW (REVIEW_ID, REVIEW_COMMENT, EVENT_RATING) VALUES (2, 'The concert was mind-blowing! The energy of the crowd the fantastic music and the incredible light show made it an unforgettable night. Cant wait for the next one!', 3.8);
+INSERT INTO REVIEW (REVIEW_ID, REVIEW_COMMENT, EVENT_RATING) VALUES (3, 'The birthday party was a blast! Great food fun games and the birthday cake was delicious. It was a fantastic celebration with friends and family.', 4.2);
+INSERT INTO REVIEW (REVIEW_ID, REVIEW_COMMENT, EVENT_RATING) VALUES (4, 'The concert was mind-blowing! The energy of the crowd the fantastic music and the incredible light show made it an unforgettable night. Cant wait for the next one!', 4.5);
+INSERT INTO REVIEW (REVIEW_ID, REVIEW_COMMENT, EVENT_RATING) VALUES (5, 'Attended a beautiful wedding last weekend! The venue was stunning and the bride and groom looked radiant. It was a truly memorable day filled with love and joy.', 3.8);
+INSERT INTO REVIEW (REVIEW_ID, REVIEW_COMMENT, EVENT_RATING) VALUES (6, 'The birthday party was a blast! Great food fun games and the birthday cake was delicious. It was a fantastic celebration with friends and family.', 4.2);
+INSERT INTO REVIEW (REVIEW_ID, REVIEW_COMMENT, EVENT_RATING) VALUES (7, 'The birthday party was a blast! Great food fun games and the birthday cake was delicious. It was a fantastic celebration with friends and family.', 4.5);
+
+
+INSERT INTO EVENT_REVIEW (EVENT_ID, REVIEW_ID) VALUES (1, 1);
+INSERT INTO EVENT_REVIEW (EVENT_ID, REVIEW_ID) VALUES (2, 2);
+INSERT INTO EVENT_REVIEW (EVENT_ID, REVIEW_ID) VALUES (3, 3);
+INSERT INTO EVENT_REVIEW (EVENT_ID, REVIEW_ID) VALUES (4, 1);
+INSERT INTO EVENT_REVIEW (EVENT_ID, REVIEW_ID) VALUES (5, 2);
+INSERT INTO EVENT_REVIEW (EVENT_ID, REVIEW_ID) VALUES (6, 3);
+INSERT INTO EVENT_REVIEW (EVENT_ID, REVIEW_ID) VALUES (7, 1);
+
+
+Insert into VENDOR (VENDOR_ID,VENDOR_NAME,EVENT_ID,EMAIL,PHONE,CATEGERY_ID) values (1,'Nancy Greenberg',2,'Nancy@gmail.com',134567819012,1);
+Insert into VENDOR (VENDOR_ID,VENDOR_NAME,EVENT_ID,EMAIL,PHONE,CATEGERY_ID) values (2,'Neena Kochhar',2,'Neena@gmail.com',234567819012,2);
+Insert into VENDOR (VENDOR_ID,VENDOR_NAME,EVENT_ID,EMAIL,PHONE,CATEGERY_ID) values (3,'Daniel Faviet',3,'Daniel@gmail.com',334567819012,3);
+Insert into VENDOR (VENDOR_ID,VENDOR_NAME,EVENT_ID,EMAIL,PHONE,CATEGERY_ID) values (4,'John Chen',4,'John@gmail.com',434567819012,1);
+Insert into VENDOR (VENDOR_ID,VENDOR_NAME,EVENT_ID,EMAIL,PHONE,CATEGERY_ID) values (5,'Ismael Sciarra',5,'Ismael@gmail.com',534567819012,2);
+Insert into VENDOR (VENDOR_ID,VENDOR_NAME,EVENT_ID,EMAIL,PHONE,CATEGERY_ID) values (6,'Valli Pataballa',5,'Valli@gmail.com',634567819012,1);
+Insert into VENDOR (VENDOR_ID,VENDOR_NAME,EVENT_ID,EMAIL,PHONE,CATEGERY_ID) values (7,'Nancy Greenberg',5,'Nancy@gmail.com',734567819012,3);
+
+
+
+INSERT INTO PARTICIPANT (PARTICIPANT_ID, PARTICIPANT_NAME, EVENT_ID,EMAIL,PHONE,CATEGERY_ID) VALUES (1, 'Sarah Johnson', 1,'Sarah@gmail.com',134567819012,1);
+INSERT INTO PARTICIPANT (PARTICIPANT_ID, PARTICIPANT_NAME, EVENT_ID,EMAIL,PHONE,CATEGERY_ID) VALUES (2, 'Alex Martinez', 2,'Alex@gmail.com',234567819012,2);
+INSERT INTO PARTICIPANT (PARTICIPANT_ID, PARTICIPANT_NAME, EVENT_ID,EMAIL,PHONE,CATEGERY_ID) VALUES (3, 'Emily Davis', 3,'Emily@gmail.com',334567819012,3);
+INSERT INTO PARTICIPANT (PARTICIPANT_ID, PARTICIPANT_NAME, EVENT_ID,EMAIL,PHONE,CATEGERY_ID) VALUES (4, 'Michael Anderson', 4,'Michael@gmail.com',434567819012,1);
+INSERT INTO PARTICIPANT (PARTICIPANT_ID, PARTICIPANT_NAME, EVENT_ID,EMAIL,PHONE,CATEGERY_ID) VALUES (5, 'Olivia White', 5,'Olivia@gmail.com',534567819012,3);
+INSERT INTO PARTICIPANT (PARTICIPANT_ID, PARTICIPANT_NAME, EVENT_ID,EMAIL,PHONE,CATEGERY_ID) VALUES (6, 'Daniel Lee', 6,'Daniel@gmail.com',634567819012,2);
+INSERT INTO PARTICIPANT (PARTICIPANT_ID, PARTICIPANT_NAME, EVENT_ID,EMAIL,PHONE,CATEGERY_ID) VALUES (7, 'Sophia Garcia', 7,'Sophia@gmail.com',734567819012,3);
+
+
+Insert into VENDOR_REVIEW (VENDOR_ID,REVIEW_ID,EVENT_ID) values (1,1,2);
+Insert into VENDOR_REVIEW (VENDOR_ID,REVIEW_ID,EVENT_ID) values (2,1,2);
+Insert into VENDOR_REVIEW (VENDOR_ID,REVIEW_ID,EVENT_ID) values (3,2,3);
+Insert into VENDOR_REVIEW (VENDOR_ID,REVIEW_ID,EVENT_ID) values (4,3,4);
+Insert into VENDOR_REVIEW (VENDOR_ID,REVIEW_ID,EVENT_ID) values (5,2,5);
+Insert into VENDOR_REVIEW (VENDOR_ID,REVIEW_ID,EVENT_ID) values (6,4,5);
+Insert into VENDOR_REVIEW (VENDOR_ID,REVIEW_ID,EVENT_ID) values (7,6,5);
+
+
+
+INSERT INTO PARTICIPANT_REVIEW (PARTICIPANT_ID, EVENT_ID, REVIEW_ID) VALUES (1, 1, 1);
+INSERT INTO PARTICIPANT_REVIEW (PARTICIPANT_ID, EVENT_ID, REVIEW_ID) VALUES (2, 2, 2);
+INSERT INTO PARTICIPANT_REVIEW (PARTICIPANT_ID, EVENT_ID, REVIEW_ID) VALUES (3, 3, 3);
+INSERT INTO PARTICIPANT_REVIEW (PARTICIPANT_ID, EVENT_ID, REVIEW_ID) VALUES (4, 4, 4);
+INSERT INTO PARTICIPANT_REVIEW (PARTICIPANT_ID, EVENT_ID, REVIEW_ID) VALUES (5, 5, 5);
+INSERT INTO PARTICIPANT_REVIEW (PARTICIPANT_ID, EVENT_ID, REVIEW_ID) VALUES (6, 6, 6);
+INSERT INTO PARTICIPANT_REVIEW (PARTICIPANT_ID, EVENT_ID, REVIEW_ID) VALUES (7, 7, 7);
+
+
+
+
+INSERT INTO SERVICES (SERVICES_ID, STREET_NAME, SERVICES_PRICE, VENDOR_ID) VALUES (1, 'EventPro Services', 100, 1);
+INSERT INTO SERVICES (SERVICES_ID, STREET_NAME, SERVICES_PRICE, VENDOR_ID) VALUES (2, 'Elite Catering Solutions', 200, 2);
+INSERT INTO SERVICES (SERVICES_ID, STREET_NAME, SERVICES_PRICE, VENDOR_ID) VALUES (3, 'Starlight Sound & Entertainment', 150, 3);
+INSERT INTO SERVICES (SERVICES_ID, STREET_NAME, SERVICES_PRICE, VENDOR_ID) VALUES (4, 'Floral Elegance Decor', 100, 1);
+INSERT INTO SERVICES (SERVICES_ID, STREET_NAME, SERVICES_PRICE, VENDOR_ID) VALUES (5, 'Premier Event Rentals', 200, 2);
+INSERT INTO SERVICES (SERVICES_ID, STREET_NAME, SERVICES_PRICE, VENDOR_ID) VALUES (6, 'Luxe Photography Studio', 150, 3);
+INSERT INTO SERVICES (SERVICES_ID, STREET_NAME, SERVICES_PRICE, VENDOR_ID) VALUES (7, 'AudioVisual Tech Solutions', 100, 1);
+
+
+
+INSERT INTO TICKET (TICKET_ID, TICKET_TYPE, TICKET_PRICE, TICKET_AWAILABILITY, EVENT_ID) VALUES (1, 'General Admission', 50, 'Available', 1);
+INSERT INTO TICKET (TICKET_ID, TICKET_TYPE, TICKET_PRICE, TICKET_AWAILABILITY, EVENT_ID) VALUES (2, 'VIP Pass', 75, 'Sold Out', 2);
+INSERT INTO TICKET (TICKET_ID, TICKET_TYPE, TICKET_PRICE, TICKET_AWAILABILITY, EVENT_ID) VALUES (3, 'Student Discount', 60, 'Available', 3);
+INSERT INTO TICKET (TICKET_ID, TICKET_TYPE, TICKET_PRICE, TICKET_AWAILABILITY, EVENT_ID) VALUES (4, 'Family Package', 50, 'Available', 4);
+INSERT INTO TICKET (TICKET_ID, TICKET_TYPE, TICKET_PRICE, TICKET_AWAILABILITY, EVENT_ID) VALUES (5, 'Group Discount', 75, 'Sold Out', 5);
+INSERT INTO TICKET (TICKET_ID, TICKET_TYPE, TICKET_PRICE, TICKET_AWAILABILITY, EVENT_ID) VALUES (6, 'Early Bird Special', 60, 'Available', 6);
+INSERT INTO TICKET (TICKET_ID, TICKET_TYPE, TICKET_PRICE, TICKET_AWAILABILITY, EVENT_ID) VALUES (7, 'All-Access Pass', 50, 'Available', 7);
+
+
+
+INSERT INTO VENUE (VENUE_ID, VENUE_NAME, VENUE_AVAILABILITY, EVENT_ID) VALUES (1, 'Crystal Ballroom Events', 'Available', 1);
+INSERT INTO VENUE (VENUE_ID, VENUE_NAME, VENUE_AVAILABILITY, EVENT_ID) VALUES (2, 'Garden Grove Pavilion', 'Booked', 2);
+INSERT INTO VENUE (VENUE_ID, VENUE_NAME, VENUE_AVAILABILITY, EVENT_ID) VALUES (3, 'Lakeside Manor', 'Available', 3);
+INSERT INTO VENUE (VENUE_ID, VENUE_NAME, VENUE_AVAILABILITY, EVENT_ID) VALUES (4, 'Starlight Convention Center', 'Available', 4);
+INSERT INTO VENUE (VENUE_ID, VENUE_NAME, VENUE_AVAILABILITY, EVENT_ID) VALUES (5, 'Riverside Grand Hall', 'Booked', 5);
+INSERT INTO VENUE (VENUE_ID, VENUE_NAME, VENUE_AVAILABILITY, EVENT_ID) VALUES (6, 'Harmony Park Gardens', 'Available', 6);
+INSERT INTO VENUE (VENUE_ID, VENUE_NAME, VENUE_AVAILABILITY, EVENT_ID) VALUES (7, 'Magnolia Terrace Hall', 'Available', 7);
+
+                                                                            
